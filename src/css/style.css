@@ -15,7 +15,7 @@ img {
   left: 0;
   right: 0;
   z-index: 999;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 .site-header * {
   color: #fff;
@@ -97,7 +97,7 @@ body {
   align-items: center;
 }
 .site-header .header-main .logo {
-  width: 10%;
+  width: 5%;
 }
 .site-header .header-main .menu {
   width: 90%;
@@ -561,7 +561,7 @@ h2:after,
 }
 .site-footer {
   padding: 20px;
-  background: #1d1d1d;
+  background: #333;
   text-align: center;
   color: #fff;
 }

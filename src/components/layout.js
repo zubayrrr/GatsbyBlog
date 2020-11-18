@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
-import { Helmet } from "react-helmet";
 
 import Header from "./header";
 import Footer from "./footer";
@@ -23,17 +22,25 @@ const Layout = ({ children, header }) => (
           siteName
           siteDescription
           menus
+          logo {
+            file {
+              url
+            }
+            fluid {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+            }
+          }
         }
       }
     `}
     render={(data) => (
       <>
-        <Helmet>
-          <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-            rel="stylesheet"
-          />
-        </Helmet>
         <Header
           data={data.contentfulSiteInformation}
           siteTitle={data.contentfulSiteInformation.siteName}

@@ -7,7 +7,10 @@ export default class Contact extends Component {
         <div className="container">
           <h2 className="text-center">Contact</h2>
           <p className="lead text-center" style={{ fontSize: "28px" }}>
-            Have a project for me? Let's discuss 👇🏽
+            Have a project for me? Let's discuss
+            <span role="img" aria-label="backhand index pointing down">
+              👇🏽
+            </span>
           </p>
           <div
             className="contact row justify-content-center text-center"

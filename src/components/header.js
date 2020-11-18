@@ -17,15 +17,12 @@ export default class Header extends Component {
         <div className="container">
           <div className="header-main">
             <div className="logo">
-              {/* <Link to="/">
+              <Link to="/">
                 {data.logo.file.url ? (
                   <img src={data.logo.file.url} alt="logo" />
                 ) : (
                   <span>{data.siteName}</span>
                 )}
-              </Link> */}
-              <Link to="/">
-                <h3 className="mb-0">ZubayrAli</h3>
               </Link>
             </div>
             <div

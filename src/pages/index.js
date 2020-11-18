@@ -88,6 +88,20 @@ export const pageQuery = graphql`
       }
     }
     contentfulSiteInformation {
+      logo {
+        file {
+          url
+        }
+        fluid {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
       menus
     }
   }

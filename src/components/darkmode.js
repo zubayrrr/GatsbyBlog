@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 export default class DarkMode extends Component {
   render() {
@@ -19,13 +21,19 @@ export default class DarkMode extends Component {
               />
               {theme === "dark" ? (
                 <div className="tog-text">
-                  <i className="fas fa-sun fa-lg text-warning"></i>
-                  {"  "}
+                  <FontAwesomeIcon
+                    icon={faSun}
+                    className="icon-font text-warning"
+                  />{" "}
                   <span>Mode</span>
                 </div>
               ) : (
                 <div className="tog-text">
-                  <i className="fas fa-moon "></i> {"  "}
+                  <FontAwesomeIcon
+                    icon={faMoon}
+                    className="icon-font text-muted"
+                  />{" "}
+                  {"  "}
                   <span>Mode</span>
                 </div>
               )}

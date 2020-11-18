@@ -57,7 +57,10 @@ export default class MailChimpForm extends React.Component {
                     style={{ height: "50px" }}
                   />
                   <p id="emailHelp" className="pt-3 lead text-muted">
-                    I'll never share your email with anyone else, No spam. 🙅‍♂️
+                    I'll never share your email with anyone else, No spam.{" "}
+                    <span role="img" aria-label="man gesturing no">
+                      🙅‍♂️
+                    </span>
                   </p>
                 </div>
                 <button type="submit" className="shadow-lg">
