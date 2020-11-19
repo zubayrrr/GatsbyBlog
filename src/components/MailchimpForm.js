@@ -59,7 +59,7 @@ export default class MailChimpForm extends React.Component {
                     </span>
                   </p>
                 </div>
-                <button type="submit" className="shadow-lg">
+                <button type="submit" className="shadow">
                   <span>Subscribe</span>{" "}
                 </button>
               </form>

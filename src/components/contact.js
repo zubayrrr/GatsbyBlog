@@ -54,7 +54,7 @@ export default class Contact extends Component {
                   ></textarea>
                 </div>
                 <div>
-                  <button type="submit" className="shadow-lg">
+                  <button type="submit" className="shadow">
                     <span>Send Message</span>
                   </button>
                 </div>

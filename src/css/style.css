@@ -450,7 +450,7 @@ pre {
 }
 .site-container {
   padding: 100px 0 20px 0;
-  background-color: var(--color-bg);
+  background-color: var(--color-section);
 }
 .blog-post .feature-img {
   width: 100%;
