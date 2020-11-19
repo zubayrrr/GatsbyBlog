@@ -1,12 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Repository from "../components/repository";
 import Layout from "../components/layout";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../components/seo";
 
 const Projects = ({ data }) => {
@@ -18,14 +16,8 @@ const Projects = ({ data }) => {
       <Helmet>
         <title>Projects</title>
       </Helmet>
-      <div className="section">
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 800,
-            paddingTop: 0,
-          }}
-        >
+      <div className="section1 ">
+        <div className="projects container">
           <div
             className="avatar"
             style={{
@@ -40,51 +32,43 @@ const Projects = ({ data }) => {
           >
             <h2 style={{ marginTop: "0" }}>
               Fetched from my{" "}
-              <a
+              <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/zubayrrr?tab=repositories"
+                to="https://github.com/zubayrrr?tab=repositories"
                 className="link-white"
               >
                 Github
-              </a>
+              </Link>
+              <span role="img" aria-label="fire, flame">
+                🔥
+              </span>
             </h2>
-            <p>
+            <p className="mb-0">
               I work on everything Front-end, I am a ReactJs fanboi like Ben
               Awad.
             </p>
           </div>
-          <hr
-            className="contour"
-            style={{
-              width: "80%",
-            }}
-          />
-          <h3
-            style={{
-              textAlign: "center",
-              fontWeight: "lighter",
-              marginBottom: "15px",
-            }}
-          >
+          <hr className="contour" />
+          <p className="sub-heading text-center">
             Latest Projects{" "}
-            <FontAwesomeIcon icon={faLevelDownAlt} className="icon-font" />
-          </h3>
+            <span role="img" aria-label="backhand index pointing down">
+              👇🏽
+            </span>
+          </p>
           {repositories.nodes
             .map((repo) => <Repository key={repo.name} repo={repo} />)
             .reverse()}
         </div>
 
-        <p style={{ textAlign: `center` }}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/zubayrrr?tab=repositories"
+        <div className="see-more">
+          <Link
+            to="https://github.com/zubayrrr?tab=repositories"
             className="link"
           >
-            More on Github
-          </a>
-        </p>
+            <span>More on Github</span>
+          </Link>
+        </div>
       </div>
     </Layout>
   );

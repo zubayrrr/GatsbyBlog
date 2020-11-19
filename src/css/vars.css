@@ -21,6 +21,8 @@ body.light {
   --color-bg: rgba(255, 255, 255, 0.9);
   --color-font: rgba(0, 0, 0, 0.8);
   --color-section1: #ffc3c3;
+  --color-section1-inverse: #ffeaea;
+
   --color-section: #ffeaea;
   --color-heading: #363636;
   --color-font-inverse: rgba(255, 255, 255, 0.8);
@@ -48,6 +50,8 @@ body.dark {
   --color-bg: rgba(0, 0, 0, 0.9);
   --color-font: rgba(255, 255, 255, 0.8);
   --color-section1: #1d1d1d;
+  --color-section1-inverse: #1d1d1d;
+
   --color-section: #121212;
   --color-heading: rgba(255, 255, 255, 0.8);
   --color-font-inverse: rgba(0, 0, 0, 0.8);

@@ -1,10 +1,11 @@
-import React from "react"
-import Octicon, { Law, Star } from "@githubprimer/octicons-react"
-import GitHubButton from "react-github-btn"
+import React from "react";
+import Octicon, { Law, Star } from "@githubprimer/octicons-react";
+import GitHubButton from "react-github-btn";
 
 const RepositoryHeader = ({ repo }) => {
   return (
     <div
+      className="card-header"
       style={{ display: `flex`, justifyContent: `space-between`, fontSize: 14 }}
     >
       <h3
@@ -32,27 +33,27 @@ const RepositoryHeader = ({ repo }) => {
         Star
       </GitHubButton>
     </div>
-  )
-}
+  );
+};
 
 const FooterItem = ({ children }) => (
   <span style={{ marginRight: 16 }}>{children}</span>
-)
+);
 
 const RepositoryFooter = ({ repo }) => {
-  const language = repo.languages.edges[0].node
-  const timeAgo = new Date(repo.updatedA) - new Date()
-  const daysAgo = Math.floor(timeAgo / (1000 * 60 * 60 * 24)) // ms to days
-  let updatedAt = repo.updatedAt.slice(0, 10)
+  const language = repo.languages.edges[0].node;
+  const timeAgo = new Date(repo.updatedA) - new Date();
+  const daysAgo = Math.floor(timeAgo / (1000 * 60 * 60 * 24)); // ms to days
+  let updatedAt = repo.updatedAt.slice(0, 10);
 
   if (daysAgo > -21) {
     updatedAt = new Intl.RelativeTimeFormat("en", { style: "narrow" }).format(
       daysAgo,
       "day"
-    )
+    );
   }
   return (
-    <div style={{ color: `#868892`, fontSize: 12 }}>
+    <div style={{ fontSize: 12 }} className="text-muted card-footer">
       <FooterItem>
         <span
           style={{
@@ -82,12 +83,12 @@ const RepositoryFooter = ({ repo }) => {
       </FooterItem>
       {repo.homepageUrl && <FooterItem />}{" "}
     </div>
-  )
-}
+  );
+};
 
 const RepositoryDescription = ({ repo }) => (
-  <div className="post">
-    <p className="repo-desc" style={{ margin: "10px 0" }}>
+  <div className="post card-body">
+    <p className="repo-desc">
       {repo.description}
 
       {repo.homepageUrl && (
@@ -97,16 +98,21 @@ const RepositoryDescription = ({ repo }) => (
       )}
     </p>
   </div>
-)
+);
 
 const Repository = ({ repo }) => {
   return (
-    <div className="repo-body post-card" style={{ padding: "20px 20px" }}>
-      <RepositoryHeader repo={repo} />
-      <RepositoryDescription repo={repo} />
-      <RepositoryFooter repo={repo} />
+    <div className="row justify-content-center">
+      <div
+        className="col-lg-8 col-md-12 card shadow px-0"
+        style={{ marginBottom: "10px" }}
+      >
+        <RepositoryHeader repo={repo} />
+        <RepositoryDescription repo={repo} />
+        <RepositoryFooter repo={repo} />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Repository
+export default Repository;

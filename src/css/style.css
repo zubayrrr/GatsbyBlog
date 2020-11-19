@@ -144,6 +144,10 @@ body {
   padding: 50px 0;
   background-color: var(--color-section);
 }
+.section1 {
+  padding: 50px 0;
+  background-color: var(--color-section1);
+}
 .section:nth-child(even) {
   background: var(--color-section1);
 }
@@ -752,4 +756,15 @@ code {
 
 .site-footer p a {
   color: var(--color-yellow) !important;
+}
+
+.projects a {
+  color: var(--color-green);
+}
+.projects a:hover {
+  color: var(--color-font) !important;
+}
+
+.card {
+  background: var(--color-section1-inverse) !important;
 }

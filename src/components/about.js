@@ -53,7 +53,7 @@ const Header = ({ data }) => (
                 </div>
               </li>
             </ul>
-            <hr />
+            <hr className="contour" />{" "}
             <ul className="list-inline">
               <li className="list-inline-item">
                 <p>
