@@ -6,7 +6,7 @@ export default class Contact extends Component {
       <div className="section">
         <div className="container">
           <h2 className="text-center">Contact</h2>
-          <p className="lead text-center" style={{ fontSize: "28px" }}>
+          <p className="sub-heading text-center">
             Have a project for me? Let's discuss
             <span role="img" aria-label="backhand index pointing down">
               👇🏽
@@ -55,7 +55,7 @@ export default class Contact extends Component {
                 </div>
                 <div>
                   <button type="submit" className="shadow-lg">
-                    Send
+                    <span>Send Message</span>
                   </button>
                 </div>
               </form>

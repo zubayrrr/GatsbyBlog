@@ -12,10 +12,7 @@ export default class Blogs extends Component {
           <div className="section-head mb-0">
             <h2>Latest Blogs</h2>
           </div>
-          <p
-            className="text-center pt-0 mt-0 lead"
-            style={{ fontSize: "28px" }}
-          >
+          <p className="text-center pt-0 mt-0 sub-heading">
             Documenting my journery. <br /> I write about Music, Productivity,
             Cool Tools, Web Development etc 🤖
           </p>

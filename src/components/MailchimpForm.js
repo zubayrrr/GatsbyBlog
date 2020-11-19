@@ -38,11 +38,7 @@ export default class MailChimpForm extends React.Component {
             <div className="col-lg-6">
               <form onSubmit={this._handleSubmit}>
                 <div class="form-group">
-                  <label
-                    for="newsletter"
-                    className="lead"
-                    style={{ fontSize: "28px" }}
-                  >
+                  <label for="newsletter" className="sub-heading">
                     {this.state.message}
                   </label>
                   <input
@@ -64,7 +60,7 @@ export default class MailChimpForm extends React.Component {
                   </p>
                 </div>
                 <button type="submit" className="shadow-lg">
-                  Submit
+                  <span>Subscribe</span>{" "}
                 </button>
               </form>
             </div>

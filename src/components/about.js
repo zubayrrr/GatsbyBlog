@@ -14,10 +14,10 @@ import {
 import { faHashtag } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ data }) => (
-  <div className="about section pb-0" id="About">
+  <div className="about section" id="About">
     <div className="container">
       <div
-        className="about-main row justify-content-center"
+        className="row justify-content-center"
         style={{
           minHeight: "100vh",
           display: "flex",
@@ -27,7 +27,7 @@ const Header = ({ data }) => (
         }}
       >
         <div className="col-md-8 col-lg-8">
-          <div className="about-details">
+          <div className="">
             <h2 className="sub-position font-weight-bold">
               {data.aboutHeading} 👋
             </h2>
@@ -53,10 +53,11 @@ const Header = ({ data }) => (
                 </div>
               </li>
             </ul>
-            <ul className="details">
-              <li>
-                <strong>Email</strong>
+            <hr />
+            <ul className="list-inline">
+              <li className="list-inline-item">
                 <p>
+                  <strong className="pr-5">Email</strong>{" "}
                   <CopyMailTo email={data.email} />
                 </p>
               </li>

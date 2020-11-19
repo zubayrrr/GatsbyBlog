@@ -24,9 +24,9 @@ const NotFoundPage = () => (
       <p className="text-danger h2 ">
         <i class="fas fa-exclamation-triangle"></i> <br /> 404 Error{" "}
       </p>
-      <p className="lead ">
+      <p className="sub-heading">
         {" "}
-        Just like Allah, this route doesn't exist.
+        This route doesn't exist.
         <br />
         Unless you were looking for a 404 page, which you totally found. kudos!
         <br />

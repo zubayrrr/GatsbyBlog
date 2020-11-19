@@ -25,7 +25,7 @@ const SuccessPage = () => (
         <i class="fas fa-check-square "></i> <br />
         Success!
       </p>
-      <p className="lead">
+      <p className="sub-heading">
         Thank you for taking the time to write to me. <br />
         Will get back to you very soon.
         <br />
