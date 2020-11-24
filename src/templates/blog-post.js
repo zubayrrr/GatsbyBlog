@@ -33,7 +33,24 @@ export default class blogPost extends Component {
         <SEO
           title={data.title}
           description={data.description.childMarkdownRemark.html}
-          keywords={["zubayr ali", "zubayrali.in"]}
+          keywords={[
+            "zubayr ali",
+            "Zubair Ali",
+            "Zubayrali",
+            "zubayrali.in",
+            "Zubayr Ali",
+            "zoobhalu",
+            "zubayrali",
+            "Indian Front-end Developer",
+            "Front-end",
+            "Blogger",
+            "Zubayr Ali Blog",
+            "Zubayr's Blogger",
+            "zoobhalu spotify",
+            "zubayr ali spotify",
+            "Web Developer Zubayr Ali",
+            "Web Development Zubayr Ali",
+          ]}
         />
         <div className="site-container blog-post">
           <div className="container">
@@ -113,6 +130,7 @@ export const pageQuery = graphql`
           sizes
         }
       }
+      excerpt
       description {
         childMarkdownRemark {
           html

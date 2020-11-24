@@ -11,7 +11,27 @@ import MailchimpForm from "../components/MailchimpForm";
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
-    <SEO title="Home" keywords={["zubayr ali", "zubayrali.in"]} />
+    <SEO
+      title="Home"
+      keywords={[
+        "zubayr ali",
+        "Zubair Ali",
+        "Zubayrali",
+        "zubayrali.in",
+        "Zubayr Ali",
+        "zoobhalu",
+        "zubayrali",
+        "Indian Front-end Developer",
+        "Front-end",
+        "Blogger",
+        "Zubayr Ali Blog",
+        "Zubayr's Blogger",
+        "zoobhalu spotify",
+        "zubayr ali spotify",
+        "Web Developer Zubayr Ali",
+        "Web Development Zubayr Ali",
+      ]}
+    />
 
     {data.contentfulSiteInformation.menus
       .filter((item) => item === "About")
@@ -72,6 +92,7 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          excerpt
           featureImage {
             fluid(maxWidth: 600) {
               base64
@@ -81,6 +102,11 @@ export const pageQuery = graphql`
               srcWebp
               srcSetWebp
               sizes
+            }
+          }
+          description {
+            childMarkdownRemark {
+              html
             }
           }
           createdAt

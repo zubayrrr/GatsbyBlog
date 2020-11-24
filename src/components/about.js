@@ -9,6 +9,7 @@ import {
   faKeybase,
   faGithub,
   faLinkedin,
+  faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faHashtag } from "@fortawesome/free-solid-svg-icons";
@@ -144,6 +145,22 @@ const Header = ({ data }) => (
                   <span>
                     <FontAwesomeIcon
                       icon={faHashtag}
+                      size="lg"
+                      className="icon-font"
+                    />
+                  </span>
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  href={data.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <span>
+                    <FontAwesomeIcon
+                      icon={faSpotify}
                       size="lg"
                       className="icon-font"
                     />

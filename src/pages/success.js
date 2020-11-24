@@ -8,7 +8,24 @@ const SuccessPage = () => (
   <Layout>
     <SEO
       title="Success: Email sent."
-      keywords={["Zubayrali", "zubayrali.in"]}
+      keywords={[
+        "zubayr ali",
+        "Zubair Ali",
+        "Zubayrali",
+        "zubayrali.in",
+        "Zubayr Ali",
+        "zoobhalu",
+        "zubayrali",
+        "Indian Front-end Developer",
+        "Front-end",
+        "Blogger",
+        "Zubayr Ali Blog",
+        "Zubayr's Blogger",
+        "zoobhalu spotify",
+        "zubayr ali spotify",
+        "Web Developer Zubayr Ali",
+        "Web Development Zubayr Ali",
+      ]}
     />
 
     <div
