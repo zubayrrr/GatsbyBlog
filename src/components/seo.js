@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, keywords, title, data }) {
               },
               {
                 property: `og:description`,
-                content: data.contentfulSiteInformation.siteDescription,
+                content: `${description}`,
               },
               {
                 property: `og:type`,
@@ -46,7 +46,7 @@ function SEO({ description, lang, meta, keywords, title, data }) {
               },
               {
                 name: `twitter:description`,
-                content: data.contentfulSiteInformation.siteDescription,
+                content: `${description}`,
               },
             ]
               .concat(
@@ -92,11 +92,7 @@ const detailsQuery = graphql`
     allContentfulBlogs {
       edges {
         node {
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
+          excerpt
         }
       }
     }

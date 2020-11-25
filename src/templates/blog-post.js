@@ -32,7 +32,7 @@ export default class blogPost extends Component {
       <Layout>
         <SEO
           title={data.title}
-          description={data.description.childMarkdownRemark.html}
+          description={data.excerpt}
           keywords={[
             "zubayr ali",
             "Zubair Ali",
