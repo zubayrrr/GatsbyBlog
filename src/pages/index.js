@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => (
   <Layout header="home">
     <SEO
       title="Home"
+      description={data.contentfulSiteInformation.siteDescription}
       keywords={[
         "zubayr ali",
         "Zubair Ali",
@@ -116,6 +117,8 @@ export const pageQuery = graphql`
       }
     }
     contentfulSiteInformation {
+      siteDescription
+      siteName
       logo {
         file {
           url
