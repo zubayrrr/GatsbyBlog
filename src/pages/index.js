@@ -105,6 +105,7 @@ export const pageQuery = graphql`
               sizes
             }
           }
+          excerpt
           description {
             childMarkdownRemark {
               html
