@@ -55,18 +55,13 @@ export default class blogPost extends Component {
         <div className="site-container blog-post">
           <div className="container">
             {data.featureImage ? (
-              <Img
-                className="feature-img"
-                fixed={data.featureImage.fluid}
-                objectFit="cover"
-                objectPosition="50% 50%"
-              />
+              <Img className="feature-img" fluid={data.featureImage.fluid} />
             ) : (
               <div className="no-image"></div>
             )}
 
             <div className="details">
-              <h1 className="title">{data.title}</h1>
+              <h1 className=" display-4 font-weight-bold">{data.title}</h1>
               <span className="date">
                 <i class="fas fa-calendar-alt"></i>{" "}
                 {moment(data.createdAt).format("LL")}
@@ -120,7 +115,7 @@ export const pageQuery = graphql`
       title
       slug
       featureImage {
-        fluid(maxWidth: 1500) {
+        fluid(maxWidth: 1500, quality: 100) {
           base64
           aspectRatio
           src

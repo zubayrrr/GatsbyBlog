@@ -37,7 +37,7 @@ h5 {
   font-size: 10px;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-font);
 }
 
@@ -435,6 +435,11 @@ button input {
 .blogs-list .item:nth-child(2) .no-image {
   height: 300px;
 }
+
+.blog-post p {
+  font-size: 20px;
+}
+
 .blog-post .details img {
   margin: 0 auto;
   float: none;
@@ -458,7 +463,7 @@ pre {
 }
 .blog-post .feature-img {
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 .blog-post .details .date {
   margin-bottom: 40px;
@@ -767,4 +772,8 @@ code {
 
 .card {
   background: var(--color-section1-inverse) !important;
+}
+
+.display-4 {
+  color: var(--color-font) !important;
 }

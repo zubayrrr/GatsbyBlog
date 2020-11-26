@@ -51,7 +51,7 @@ export default class Blogs extends Component {
                       {item.node.featureImage ? (
                         <Img
                           alt={item.node.title}
-                          fixed={item.node.featureImage.fluid}
+                          fluid={item.node.featureImage.fluid}
                           objectFit="cover"
                           objectPosition="50% 50%"
                         />
@@ -90,7 +90,7 @@ export const pageQuery = graphql`
           title
           slug
           featureImage {
-            fluid(maxWidth: 1500) {
+            fluid(maxWidth: 1500, quality: 100) {
               base64
               aspectRatio
               src
