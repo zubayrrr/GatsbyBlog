@@ -777,3 +777,7 @@ code {
 .display-4 {
   color: var(--color-font) !important;
 }
+
+h1 {
+  color: var(--color-font) !important;
+}
