@@ -2,6 +2,8 @@ import React from "react";
 import CopyMailTo from "react-copy-mailto";
 import { Link } from "gatsby";
 
+import resume from "../assets/Resume-main.pdf";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -48,9 +50,9 @@ const Header = ({ data }) => (
               </li>
               <li className="list-inline-item">
                 <div className="see-more">
-                  <Link to="/projects">
+                  <a href={resume} target="_blank">
                     <span>Download Resume</span>
-                  </Link>
+                  </a>
                 </div>
               </li>
             </ul>
